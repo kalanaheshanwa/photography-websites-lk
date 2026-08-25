@@ -1,66 +1,31 @@
-const plans = [
-  { name: "Essential", price: "5,000", note: "A clean online home for growing photographers.", features: ["Modern 1–3 page website", "Portfolio gallery", "Packages and pricing section", "WhatsApp enquiry buttons", "Mobile-friendly design", "Hosting and maintenance", "1 small content update monthly"] },
-  { name: "Signature", price: "8,500", note: "A stronger website for established photography brands.", popular: true, features: ["Custom 5-page website", "Multiple portfolio galleries", "Packages and pricing pages", "WhatsApp enquiry journey", "Testimonials and Instagram links", "Hosting and maintenance", "2 content updates monthly", "Basic search setup"] },
-  { name: "Studio", price: "12,500", note: "For studios with more work, services and regular updates.", features: ["Expanded custom website", "Advanced portfolio collections", "Multiple service categories", "Priority content updates", "WhatsApp conversion setup", "Hosting and maintenance", "Up to 4 updates monthly", "Performance and search setup"] },
+const packages = [
+  {name:"Essential",price:"5,000",label:"For photographers ready to look established online.",features:["Distinct 1–3 page website","Curated portfolio gallery","Packages and pricing section","WhatsApp enquiry journey","Mobile-first experience","Hosting and technical care","1 content update each month"]},
+  {name:"Signature",price:"8,500",label:"For growing brands with more stories and services.",featured:true,features:["Custom website up to 5 pages","Multiple portfolio galleries","Detailed service and package pages","Testimonials and social links","WhatsApp enquiry journey","Hosting and technical care","2 content updates each month","Foundational search setup"]},
+  {name:"Studio",price:"12,500",label:"For studios with larger portfolios and regular changes.",features:["Expanded custom website","Advanced gallery collections","Multiple service categories","Priority support","WhatsApp conversion setup","Hosting and technical care","Up to 4 updates each month","Performance and search setup"]}
 ];
-
 const faqs = [
-  ["Is there a website development fee?", "No large development fee. You simply choose a monthly plan and pay before we begin. Your custom domain is billed separately."],
-  ["Will my website look like everyone else's?", "No. Every website receives its own visual direction based on your photography style, colours and brand personality."],
-  ["How do I send portfolio updates?", "Send your new photos and instructions to us on WhatsApp. We optimise the images and update your website for you."],
-  ["Can I change my packages and prices?", "Yes. Package, price, text and portfolio updates are included according to the monthly allowance in your plan."],
-  ["Do I need to manage the website?", "No. We take care of hosting, maintenance and requested content updates, so you can focus on your clients and photography."],
+  ["Why is this a monthly service?","Your monthly payment covers the website design, hosting, maintenance, technical care and ongoing content updates. You avoid a large development payment and never need to manage the website yourself."],
+  ["Is there an upfront website development fee?","No large development fee. Your first monthly payment starts the project. Your domain registration or renewal is charged separately."],
+  ["Is there a minimum commitment?","Yes. The service has a six-month minimum term. This gives us enough time to build, launch and properly support your website while keeping the upfront cost low."],
+  ["Will my website look like every other photographer’s website?","No. We reuse a reliable technical system, but your typography, colours, page composition and gallery treatment are designed around your own photography and brand."],
+  ["How do I send new portfolio images?","Simply send the selected images and instructions through WhatsApp. We optimise them for fast loading and add them to the correct gallery."],
+  ["Can I change my photography packages and prices?","Yes. Text, price, package and portfolio changes are included within the monthly update allowance of your selected plan."],
+  ["What counts as one monthly update?","One update can include a small group of related changes, such as replacing up to 15 gallery images, updating one package, or changing existing text and contact details."],
+  ["What happens if I need more updates?","We will confirm the additional cost before starting. You can also move to a higher plan if you regularly need more changes."],
+  ["Who owns the domain and photographs?","You own your domain, photographs, logo and written content. Kalana Square retains ownership of its reusable website framework and development system."],
+  ["Can customers book directly through the website?","The standard journey sends potential clients to your WhatsApp with a clear enquiry prompt. A full booking or payment system can be added as a separately priced upgrade."],
+  ["How quickly can my website be launched?","Most Essential websites can be prepared within 7–10 working days after all photographs, packages, branding and contact details are received."],
+  ["What happens if I cancel?","After the six-month minimum term, you can cancel with 30 days’ notice. Your domain remains yours, while the managed website stays active only while the subscription is maintained."]
 ];
-
-export default function Home() {
-  return <main>
-    <header className="nav shell">
-      <a className="brand" href="#top" aria-label="Kalana Square for Photographers home"><span>KALANA SQUARE</span><small>FOR PHOTOGRAPHERS</small></a>
-      <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
-      <a className="navCta" href="#pricing">View plans</a>
-    </header>
-
-    <section className="hero shell" id="top">
-      <div className="heroCopy">
-        <p className="eyebrow">WEBSITES FOR SRI LANKAN PHOTOGRAPHERS</p>
-        <h1>Your work deserves more than a PDF.</h1>
-        <p className="lead">A modern photography website that presents your portfolio, packages and pricing beautifully. We build it, host it and keep it updated for you.</p>
-        <div className="heroActions"><a className="button dark" href="#pricing">See monthly plans</a><a className="textLink" href="#how">See how it works <span>↘</span></a></div>
-        <div className="microProof"><span>No large upfront fee</span><span>Managed for you</span><span>WhatsApp ready</span></div>
-      </div>
-      <div className="heroVisual" aria-label="Photographer working in a studio">
-        <img src="https://images.unsplash.com/photo-1611093793031-46db535bde90?fm=jpg&fit=crop&w=1400&q=84" alt="Photographer adjusting a professional camera in a studio" />
-        <div className="visualCard"><span>YOUR DIGITAL STUDIO</span><strong>Portfolio. Packages.<br/>Enquiries.</strong></div>
-      </div>
-    </section>
-
-    <section className="statement"><div className="shell statementGrid"><p className="sectionIndex">01 / WHY A WEBSITE</p><h2>Make the right first impression before the first WhatsApp message.</h2><p>Let potential clients explore your best work, understand your packages and contact you with confidence—all from one professional link.</p></div></section>
-
-    <section className="steps shell" id="how">
-      <div className="sectionHead"><div><p className="eyebrow">SIMPLE FROM DAY ONE</p><h2>We take care of the website.</h2></div><p>You send your information once. After launch, simply message us whenever something needs to change.</p></div>
-      <div className="stepGrid">
-        <article><span>01</span><h3>Choose your plan</h3><p>Select the level that fits your portfolio, services and update needs.</p></article>
-        <article><span>02</span><h3>Send your content</h3><p>Share your logo, best photographs, packages and contact details via WhatsApp.</p></article>
-        <article><span>03</span><h3>We build your website</h3><p>We create a distinct, mobile-friendly design around your photography style.</p></article>
-        <article><span>04</span><h3>Message us for updates</h3><p>New gallery or changed price? Send it to us and we handle the website update.</p></article>
-      </div>
-    </section>
-
-    <section className="pricing" id="pricing"><div className="shell">
-      <div className="pricingIntro"><p className="eyebrow">CLEAR MONTHLY PRICING</p><h2>Start without a large development cost.</h2><p>Every plan includes your website, reliable hosting, ongoing maintenance and direct support.</p></div>
-      <div className="pricingGrid">{plans.map(plan => <article className={`plan ${plan.popular ? "featured" : ""}`} key={plan.name}>
-        {plan.popular && <span className="badge">MOST POPULAR</span>}<p className="planName">{plan.name}</p><div className="price"><small>LKR</small><strong>{plan.price}</strong><span>/ month</span></div><p className="planNote">{plan.note}</p><a className={`button ${plan.popular ? "light" : "dark"}`} href="#contact">Choose {plan.name}</a><ul>{plan.features.map(feature => <li key={feature}><span>✓</span>{feature}</li>)}</ul>
-      </article>)}</div>
-      <p className="pricingFine">Custom domain registration or renewal is charged separately. Fair-use terms apply to monthly updates.</p>
-    </div></section>
-
-    <section className="included shell"><div className="sectionHead"><div><p className="eyebrow">INCLUDED IN EVERY PLAN</p><h2>Everything essential. Nothing complicated.</h2></div></div><div className="includedGrid">
-      <div><span>01</span><h3>A design that fits you</h3><p>Not a copy-and-paste website. Your visual direction is shaped around your photography.</p></div><div><span>02</span><h3>Built for mobile</h3><p>A smooth experience for clients discovering your work from Facebook and Instagram.</p></div><div><span>03</span><h3>WhatsApp enquiries</h3><p>Clear buttons guide visitors directly into a conversation with your business.</p></div><div><span>04</span><h3>Hands-off updates</h3><p>Send us the new content. We optimise, update and keep the website working.</p></div>
-    </div></section>
-
-    <section className="faq" id="faq"><div className="shell faqGrid"><div><p className="eyebrow">QUESTIONS, ANSWERED</p><h2>Good to know before you begin.</h2></div><div className="faqList">{faqs.map(([q,a]) => <details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></div></section>
-
-    <section className="contact shell" id="contact"><p className="eyebrow">READY WHEN YOU ARE</p><h2>Turn your photography into a website clients remember.</h2><p>Tell us what you photograph and share your current portfolio. We’ll recommend the right plan and explain the next step.</p><a className="button light" href="#pricing">Start on WhatsApp <span>↗</span></a><small>WhatsApp number will be connected before launch.</small></section>
-    <footer className="shell"><div className="brand"><span>KALANA SQUARE</span><small>FOR PHOTOGRAPHERS</small></div><p>Managed photography websites for Sri Lanka.</p><p>© 2026 Kalana Square</p></footer>
-  </main>;
-}
+export default function Home(){return <main>
+  <header className="siteHeader shell"><a className="wordmark" href="#top"><strong>KALANA SQUARE</strong><span>PHOTOGRAPHY WEBSITES</span></a><nav><a href="#why">Why it works</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav><a className="miniCta" href="#pricing">Explore plans ↗</a></header>
+  <section className="hero shell" id="top"><div className="heroTop"><p className="kicker">MANAGED WEBSITES FOR SRI LANKAN PHOTOGRAPHERS</p><h1>Let your work make the <em>first impression.</em></h1><div className="heroIntro"><p>A considered, modern website that shows your portfolio, explains your packages and moves the right clients into WhatsApp.</p><a className="pill dark" href="#pricing">View monthly plans</a></div></div><div className="heroImage"><img src="https://images.unsplash.com/photo-1611093793031-46db535bde90?fm=jpg&fit=crop&w=1800&q=86" alt="Professional photographer preparing a camera in a bright studio"/><div className="imageNote"><span>01</span><p>Portfolio.<br/>Packages.<br/>Enquiries.</p></div></div><div className="heroFoot"><p>No large development fee</p><p>Designed around your brand</p><p>Updated for you</p></div></section>
+  <section className="manifesto" id="why"><div className="shell"><p className="kicker light">MORE THAN A LINK</p><h2>People judge the quality of your photography before they ever message you.</h2><div className="manifestoText"><p>A PDF explains your prices. A well-designed website builds desire, presents your value and gives potential clients the confidence to enquire.</p><p>Your website becomes the professional home for every Facebook post, Instagram bio, referral and WhatsApp conversation.</p></div></div></section>
+  <section className="value shell"><div className="sectionTitle"><p className="kicker">WHY LKR 5,000 MAKES SENSE</p><h2>A small monthly investment in how your business is perceived.</h2></div><div className="valueLead"><div className="daily"><strong>≈ LKR 167</strong><span>per day</span></div><p>For less than the cost of many daily business expenses, your photography brand has a professionally designed and continuously managed online presence.</p></div><div className="valueGrid"><article><span>01</span><h3>Look established</h3><p>Give potential clients one polished place to understand your style, experience and packages.</p></article><article><span>02</span><h3>Save your time</h3><p>No page builders, image compression, hosting issues or price-list edits for you to manage.</p></article><article><span>03</span><h3>Support every enquiry</h3><p>Send one professional link instead of repeatedly explaining your work through messages and PDFs.</p></article><article><span>04</span><h3>Keep it current</h3><p>Your best work and latest packages can change as your photography business grows.</p></article></div><div className="roi"><p>One good booking could cover the website for months.</p><span>The website does not replace your marketing. It helps the attention you already earn convert into confidence and enquiries.</span></div></section>
+  <section className="process" id="process"><div className="shell"><div className="sectionTitle split"><div><p className="kicker light">A SIMPLE, MANAGED PROCESS</p><h2>You photograph.<br/><em>We handle the website.</em></h2></div><p>Everything is organised through a straightforward WhatsApp workflow. You remain in control without becoming the website manager.</p></div><div className="processRows"><article><span>01</span><h3>Choose</h3><p>Select the plan that matches your portfolio and update needs.</p></article><article><span>02</span><h3>Share</h3><p>Send your logo, photographs, packages and business information.</p></article><article><span>03</span><h3>Review</h3><p>We create a branded website and send it to you for approval.</p></article><article><span>04</span><h3>Stay current</h3><p>Message us whenever approved content needs to be updated.</p></article></div></div></section>
+  <section className="pricing" id="pricing"><div className="shell"><div className="pricingHead"><p className="kicker">CLEAR MONTHLY PLANS</p><h2>Choose the level of support your photography business needs.</h2><p>Every plan includes design, hosting, maintenance and a direct line for content updates.</p></div><div className="plans">{packages.map(p=><article className={"plan "+(p.featured?"featured":"")} key={p.name}>{p.featured&&<span className="popular">MOST CHOSEN</span>}<p className="planName">{p.name}</p><div className="price"><small>LKR</small><strong>{p.price}</strong><span>/ month</span></div><p className="planLabel">{p.label}</p><a className={"pill "+(p.featured?"cream":"dark")} href="#contact">Choose {p.name}</a><ul>{p.features.map(f=><li key={f}>{f}</li>)}</ul></article>)}</div><p className="planFine">Six-month minimum term. Domain registration or renewal is billed separately. Additional or major development is quoted before work begins.</p></div></section>
+  <section className="futurePortfolio shell"><div><p className="kicker">SELECTED PHOTOGRAPHY WEBSITES</p><h2>Proof should be seen, not simply promised.</h2></div><div><p>Our photography website portfolio is being curated with real client work and a new Sri Lankan photography concept project.</p><span>Portfolio collection coming next.</span></div></section>
+  <section className="faq" id="faq"><div className="shell faqLayout"><div className="faqIntro"><p className="kicker">BEFORE YOU BEGIN</p><h2>Everything you may want to ask.</h2><p>Clear expectations make a better working relationship. If your question is not here, message us directly.</p></div><div className="faqList">{faqs.map(([q,a],i)=><details key={q}><summary><span>{String(i+1).padStart(2,"0")}</span>{q}<b>+</b></summary><p>{a}</p></details>)}</div></div></section>
+  <section className="contact shell" id="contact"><p className="kicker light">START WITH A CONVERSATION</p><h2>Your photography already has a style.<br/><em>Your website should too.</em></h2><p>Tell us what you photograph and share your current portfolio. We’ll recommend the most suitable plan.</p><a className="pill cream" href="#pricing">Start on WhatsApp ↗</a><small>WhatsApp number will be connected before advertising.</small></section>
+  <footer className="shell"><div className="wordmark"><strong>KALANA SQUARE</strong><span>PHOTOGRAPHY WEBSITES</span></div><p>Managed photography websites for Sri Lanka.</p><p>© 2026 Kalana Square</p></footer>
+</main>}
