@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Photography Websites by Kalana Square",
   description: "Modern, fully managed websites for Sri Lankan photographers. Portfolio, pricing, WhatsApp enquiries, hosting and updates from one monthly plan.",
+  other: { "codex-preview": "development" },
   openGraph: {
     title: "Photography Websites by Kalana Square",
     description: "A modern website. Managed for you.",
