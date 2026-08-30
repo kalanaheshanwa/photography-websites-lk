@@ -30,6 +30,12 @@ body{overflow-x:hidden}.siteHeader.shell{width:100%;max-width:none;margin:0;padd
 @media(max-width:1050px){.portfolioIntro,.portfolioFeature{grid-template-columns:1fr}.portfolioIntro{gap:35px}.portfolioFeature{gap:48px}.portfolioVisual,.portfolioDesktop{min-height:460px}}
 @media(max-width:600px){.portfolio{padding:90px 0;scroll-margin-top:78px}.portfolioIntro{margin-bottom:48px}.portfolioIntro h2{font-size:48px;margin-top:35px}.portfolioFeature{padding:16px;gap:38px}.portfolioVisual,.portfolioDesktop{min-height:260px}.portfolioMobile{width:28%;border-width:4px}.portfolioCopy{padding:0 8px 18px}.portfolioCopy h3{font-size:43px}.portfolioActions{align-items:flex-start;flex-direction:column;gap:20px}}
 </style>
+<style>
+.portfolioIntro{grid-template-columns:1.15fr .85fr;gap:90px;margin-bottom:78px}.portfolioIntro h2 em{font-family:'Cormorant Garamond',serif;font-weight:400}.portfolioIntro>div:last-child p{max-width:500px;font-size:15px;line-height:1.7;color:var(--muted);margin:0}.portfolioIntro>div:last-child span{display:inline-block;margin-top:24px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}.portfolioGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:54px 22px}.portfolioCard{min-width:0}.portfolioCard .portfolioVisual{display:block;position:relative;min-height:0;aspect-ratio:4/5;background:#e7e1d8;overflow:hidden}.portfolioCard .portfolioVisual img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .5s ease,filter .5s ease}.portfolioCard:hover .portfolioVisual img,.portfolioCard .portfolioVisual:focus-visible img{transform:scale(1.025);filter:saturate(.82)}.portfolioCard .portfolioIndex{width:52px;height:52px;font-size:9px}.portfolioOpen{position:absolute;right:15px;bottom:15px;padding:11px 14px;border-radius:99px;background:rgba(250,248,243,.92);backdrop-filter:blur(8px);font-size:8px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:0;transform:translateY(6px);transition:.25s}.portfolioCard:hover .portfolioOpen,.portfolioVisual:focus-visible .portfolioOpen{opacity:1;transform:translateY(0)}.portfolioCardCopy{padding-top:20px;border-top:1px solid var(--line);margin-top:14px}.portfolioCardCopy p{margin:0 0 11px;color:var(--muted);font-size:9px;letter-spacing:.13em;text-transform:uppercase}.portfolioCardCopy h3{font-size:clamp(25px,2.3vw,36px);font-weight:300;line-height:1;letter-spacing:-.035em;margin:0 0 22px}.portfolioCardCopy a{display:inline-block;padding-bottom:7px;border-bottom:1px solid;font-size:9px;font-weight:600;letter-spacing:.11em;text-transform:uppercase}.portfolioTrust{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end;margin-top:90px;padding:42px;background:var(--sage)}.portfolioTrust p{font-size:clamp(28px,3vw,42px);font-weight:300;line-height:1.04;letter-spacing:-.04em;margin:0}.portfolioTrust span{font-size:12px;line-height:1.65}.whatsappFloat{position:fixed;right:24px;bottom:24px;z-index:140;display:flex;align-items:center;gap:13px;min-height:54px;padding:7px 8px 7px 21px;border-radius:99px;background:#1f9d55;color:#fff;box-shadow:0 14px 36px rgba(25,55,35,.28);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:transform .22s ease,box-shadow .22s ease}.whatsappFloat b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#fff;color:#1f9d55;font-size:17px;font-weight:400}.whatsappFloat:hover,.whatsappFloat:focus-visible{transform:translateY(-3px);box-shadow:0 18px 42px rgba(25,55,35,.34)}
+@media(max-width:950px){.portfolioIntro{grid-template-columns:1fr;gap:35px}.portfolioGrid{grid-template-columns:repeat(2,1fr)}.portfolioTrust{grid-template-columns:1fr;gap:26px}}
+@media(max-width:600px){.portfolioGrid{grid-template-columns:1fr;gap:44px}.portfolioOpen{opacity:1;transform:none}.portfolioCardCopy h3{font-size:34px}.portfolioTrust{margin-top:60px;padding:28px}.portfolioTrust p{font-size:31px}.whatsappFloat{right:16px;bottom:16px;width:56px;height:56px;min-height:56px;padding:8px}.whatsappFloat span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.whatsappFloat b{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.whatsappFloat{transition:none}}
+</style>
 </head>
 <body>
 <link rel="preload" as="image" href="https://images.unsplash.com/photo-1611093793031-46db535bde90?fm=jpg&amp;fit=crop&amp;w=1800&amp;q=86"/>
@@ -108,6 +114,10 @@ body{overflow-x:hidden}.siteHeader.shell{width:100%;max-width:none;margin:0;padd
 <div>
 <p>Old PDF copies continue circulating after prices change</p>
 <p>Everyone always sees your latest packages</p>
+</div>
+<div>
+<p>PDFs and private Drive links are harder for search and AI tools to discover</p>
+<p>Search-friendly pages help Google and AI tools understand your services and current prices</p>
 </div>
 <div>
 <p>Feels outdated and less professional to new clients</p>
@@ -443,34 +453,20 @@ body{overflow-x:hidden}.siteHeader.shell{width:100%;max-width:none;margin:0;padd
 <div class="shell">
 <div class="portfolioIntro">
 <div>
-<p class="kicker">SELECTED PHOTOGRAPHY WEBSITE</p>
-<h2>See what your own website could feel like.</h2>
+<p class="kicker">WEBSITE INSPIRATION + OUR DEMO</p>
+<h2>See what a strong photography website <em>can feel like.</em></h2>
 </div>
-<p>Sky High Photography is a complete concept project created to show the quality, clarity and care we can bring to a photographer’s online presence.</p>
+<div><p>Explore five independent photography website references and a Kalana Square demo across weddings, portraits, lifestyle and commercial production.</p><span>Six live website experiences</span></div>
 </div>
-<article class="portfolioFeature">
-<a class="portfolioVisual" href="https://kalanaheshanwa.github.io/sky-high-photography/" target="_blank" rel="noreferrer" aria-label="Open the Sky High Photography concept website">
-<img class="portfolioDesktop" src="./public/sky-high-desktop.webp" alt="Desktop view of the Sky High Photography website"/>
-<img class="portfolioMobile" src="./public/sky-high-mobile.webp" alt="Mobile view of the Sky High Photography website"/>
-<span class="portfolioIndex">01</span>
-</a>
-<div class="portfolioCopy">
-<p class="kicker">CONCEPT PROJECT · PORTRAIT PHOTOGRAPHY</p>
-<h3>Sky High Photography</h3>
-<p>A refined photography website built around real imagery, clear packages and an effortless route from browsing to enquiry. The experience adapts carefully from a large desktop screen to a photographer’s most important channel: mobile.</p>
-<ul>
-<li>Interactive pricing finder</li>
-<li>Responsive portrait galleries</li>
-<li>Clear WhatsApp enquiry journey</li>
-<li>Dedicated packages and FAQ page</li>
-</ul>
-<div class="portfolioActions">
-<a class="pill dark" href="https://kalanaheshanwa.github.io/sky-high-photography/" target="_blank" rel="noreferrer">View live website ↗</a>
-<a class="portfolioTextLink" href="https://kalanaheshanwa.github.io/sky-high-photography/pricing.html" target="_blank" rel="noreferrer">Explore pricing page ↗</a>
+<div class="portfolioGrid">
+<article class="portfolioCard"><a class="portfolioVisual" href="https://www.afletcherfilm.com/" target="_blank" rel="noreferrer"><img src="./public/portfolio-a-fletcher-film.webp" alt="A. Fletcher Film wedding cinematography website"><span class="portfolioIndex">01</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Independent inspiration · Wedding cinematography</p><h3>A. Fletcher Film</h3><a href="https://www.afletcherfilm.com/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
+<article class="portfolioCard"><a class="portfolioVisual" href="https://www.by-lena.com/" target="_blank" rel="noreferrer"><img src="./public/portfolio-by-lena.webp" alt="By Lena lifestyle photography website"><span class="portfolioIndex">02</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Independent inspiration · Lifestyle photography</p><h3>By Lena</h3><a href="https://www.by-lena.com/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
+<article class="portfolioCard"><a class="portfolioVisual" href="https://www.xsight.com.au/" target="_blank" rel="noreferrer"><img src="./public/portfolio-xsight.webp" alt="XSiGHT wedding photography and film website"><span class="portfolioIndex">03</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Independent inspiration · Wedding photography &amp; film</p><h3>XSiGHT</h3><a href="https://www.xsight.com.au/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
+<article class="portfolioCard"><a class="portfolioVisual" href="https://www.moggmedia.com/" target="_blank" rel="noreferrer"><img src="./public/portfolio-mogg-media.webp" alt="Mogg Media commercial production website"><span class="portfolioIndex">04</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Independent inspiration · Commercial production</p><h3>Mogg Media</h3><a href="https://www.moggmedia.com/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
+<article class="portfolioCard"><a class="portfolioVisual" href="https://www.nadiasarmova.com/" target="_blank" rel="noreferrer"><img src="./public/portfolio-nadia-sarmova.webp" alt="Nadia Sarmova film and creative production website"><span class="portfolioIndex">05</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Independent inspiration · Film &amp; creative production</p><h3>Nadia Sarmova</h3><a href="https://www.nadiasarmova.com/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
+<article class="portfolioCard"><a class="portfolioVisual" href="https://kalanaheshanwa.github.io/sky-high-photography/" target="_blank" rel="noreferrer"><img src="./public/portfolio-sky-high.webp" alt="Sky High portrait and family photography website"><span class="portfolioIndex">06</span><span class="portfolioOpen">View live ↗</span></a><div class="portfolioCardCopy"><p>Kalana Square demo · Portrait &amp; family photography</p><h3>Sky High Photography</h3><a href="https://kalanaheshanwa.github.io/sky-high-photography/" target="_blank" rel="noreferrer">Explore website ↗</a></div></article>
 </div>
-<small>Demonstration concept — created to show our design and development capabilities.</small>
-</div>
-</article>
+<div class="portfolioTrust"><p>Every photography business has a different audience, style and story.</p><span>Your website will be designed around your own work and brand. Reference websites are independent examples and are not presented as Kalana Square client work.</span></div>
 </div>
 </section>
 <section class="faq" id="faq">
@@ -556,19 +552,25 @@ body{overflow-x:hidden}.siteHeader.shell{width:100%;max-width:none;margin:0;padd
 </details>
 <details>
 <summary>
-<span>13</span>Can customers book directly through the website?<b>+</b>
+<span>13</span>Can my website appear in Google and AI search?<b>+</b>
+</summary>
+<p>Your public website is built with clear, search-friendly pages so search engines and AI-assisted search tools can better understand your photography services, portfolio and current prices. This can improve discoverability, but no provider can guarantee a particular ranking or inclusion in an AI-generated answer.</p>
+</details>
+<details>
+<summary>
+<span>14</span>Can customers book directly through the website?<b>+</b>
 </summary>
 <p>The standard journey sends potential clients to your WhatsApp with a clear enquiry prompt. A full booking or payment system can be added as a separately priced upgrade.</p>
 </details>
 <details>
 <summary>
-<span>14</span>How quickly can my website be launched?<b>+</b>
+<span>15</span>How quickly can my website be launched?<b>+</b>
 </summary>
 <p>Most websites can be launched within 5–7 working days after all required photographs, packages, branding and contact details are received.</p>
 </details>
 <details>
 <summary>
-<span>15</span>What happens after I cancel?<b>+</b>
+<span>16</span>What happens after I cancel?<b>+</b>
 </summary>
 <p>Future monthly renewals stop. The managed website remains active until the end of the period already paid for, and your original photographs and business content remain yours.</p>
 </details>
@@ -584,6 +586,7 @@ body{overflow-x:hidden}.siteHeader.shell{width:100%;max-width:none;margin:0;padd
 <a class="pill cream" href="https://wa.me/94714950315?text=Hello%20Kalana%20Square%2C%20I%27m%20interested%20in%20a%20managed%20photography%20website.%20Can%20you%20help%20me%20choose%20the%20right%20package%3F" target="_blank" rel="noreferrer">Start on WhatsApp ↗</a>
 <small>WhatsApp: +94 71 495 0315</small>
 </section>
+<a class="whatsappFloat" href="https://wa.me/94714950315?text=Hello%20Kalana%20Square%2C%20I%27m%20interested%20in%20a%20managed%20photography%20website.%20Can%20you%20help%20me%20choose%20the%20right%20package%3F" target="_blank" rel="noreferrer" aria-label="Chat with Kalana Square on WhatsApp"><span>Chat on WhatsApp</span><b aria-hidden="true">↗</b></a>
 <footer class="shell">
 <div class="wordmark">
 <strong>KALANA SQUARE</strong>
